@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    
+<div id="inputDiv">
+    <div id="taskName">
+        <div class=taskChild>
+            <input type="text" name="Enter Task" id='taskInput' placeholder="Enter your task">
+            <button class="itemBtn taskbtn">Add Task</button>
+            <button class="itemBtn taskbtn">Cancel</button>
+        </div>
+       
+    </div>
+</div>   
+<div class="parent-container">
+    <div class="board todo-board">
+        <h4 class="items" id="newItems">Todo</h4>
+        <p draggable="true" class="item">Learn JS</p>
+        <p draggable="true" class="item">Learn React</p>
+    </div>
+    <div class="board">
+        <h4 class="items">In Progress</h4>
+    </div>
+    <div class="board">
+        <h4 class="items">Done</h4>
+    </div>
+    <button class="itemBtn">Add Item</button>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
